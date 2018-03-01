@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>manila</title>
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="../src/photon.css">
+        <link rel="stylesheet" href="../src/index.css">
+
+        <!-- javascript: allowing for jquery -->
+        <!--<script>window.$ = window.jQuery = require('./node_modules/jquery/src/jquery.js');</script>
+        <script type='text/javascript' src="./node_modules/jquery/src/jquery.js"></script>
+-->
+
+	</head>
+	<body>
+        <div class="window">
+            <div class="dragbar"></div>
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane">
+            <div class="padded-more main">
+                <div class="row">
+                  <div class="cardgroup center">
+                    <div class="stack-interface">
+                     <div class="center" type="button" id="stack">s
+                         <div style="height:200px; width:260px; padding-top: 30px;">
+                         <img id="preview" src="../src/img/plus.png" >
+                         </div>
+                         <div id="currentFile">Click to Load Stack</div>
+                         <div id="root"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="button-group"> 
+                      
+                      <div class="col-3">
+                          <img src="../src/img/trash.svg" class="button-icon">
+                          <h3 class="over">trash</h3>
+                          <div type="button" id="left" class="sel-button ">
+                            <div class="left-arrow"></div>
+                          </div>
+                      </div>
+                      <div class="col-3">
+                          <img src="../src/img/undo.png" class="button-icon">
+                          <h3 class="over">undo</h3>
+                          <div type="button" id="center" class="sel-button ">
+                              <div class="down-arrow"></div>
+                          </div>
+                      </div>
+                      <div class="col-3">
+                          <img src="../src/img/folder.svg" class="button-icon">
+                              <h3 class="over">keep</h3>
+                          <div type="button" id="right" class="sel-button ">
+                              <div class="right-arrow"></div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+	</body>
+    <script type='text/javascript' src="../src/files.js"></script>
+    <script type='text/javascript' src="../build/bundle.js"></script>
+</html>
